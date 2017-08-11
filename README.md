@@ -10,7 +10,11 @@ executed. In the case of this `pre-commit` hook, any staged files are scanned fo
 that shouldn't be committed (i.e. debug, log, ad, etc.). You can see an example
 screenshot below:
 
+Bad Keywords Found<br>
 ![alt text](http://i.imgur.com/eFtWsAU.png)
+
+No Keywords Found<br>
+![alt text](http://i.imgur.com/lElqb50.png)
 
 # Global Installation
 (borrowed from [here](https://coderwall.com/p/jp7d5q/create-a-global-git-commit-hook))
