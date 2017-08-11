@@ -34,6 +34,7 @@ This tells git to copy everything in ~/.git-templates to your per-project .git/ 
 
 5. **Re-initialize git in each existing repo you'd like to use this in:**<br>
 `git init`<br>
+**Important!** Make sure to run this command in the root folder of the repo (i.e. the path that contains the `.git` folder). **Not** the WP theme folder you are working in. I made this mistake the first time.
 
 # Per Repo Installation
 1. **Clone this repo into hooks folder:**<br>
