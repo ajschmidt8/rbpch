@@ -53,7 +53,7 @@ Nope! <br>
 "Running git init in an existing repository is safe. It will not overwrite things that are already there. The primary reason for rerunning git init is to pick up newly added templates" ([source](https://git-scm.com/docs/git-init))
 
 * **Does this hook scan *ALL* staged files?**<br>
-Nope! Only the following file extensions are scanned: `.php, .html, .js` Feel free to Slack me or submit a PR if you want to add more.
+Nope! Only the following file extensions are scanned: `.php, .html, .js`. Feel free to Slack me or submit a PR if you want to add more.
 
 * **What keywords are checked?**<br>
 As of right now, the following keywords are scanned:<br>
