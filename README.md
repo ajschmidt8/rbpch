@@ -50,7 +50,7 @@ or<br>
 
 # FAQs
 * **Can I bypass the pre-commit hook?**<br>
-Yup! Just use the `--no-verify` (`-n` for short) flag. (i.e. `gmsg 'your awesome commit message' -n`)
+Yup! Just use the `--no-verify` flag (`-n` for short). (i.e. `gmsg 'your awesome commit message' -n`)
 
 * **Is the `pre-commit` file pushed to the remote repo with the other staged files?**<br>
 Nope! ([source](https://stackoverflow.com/questions/12222186/are-git-hooks-pushed-to-the-remote-when-i-git-push))
