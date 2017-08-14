@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # Original Author: Boris Guéry <guery.b@gmail.com>
 # https://github.com/borisguery/git-keywords-checker
-# Tweaked By: AJ Schmidt (replaced grep w/ ack, replaced sed w/ perl for use
+# Tweaked By: AJ Schmidt (replaced grep w/ ack & sed w/ perl for use
 # with regex lookaheads and lookbehinds)
 
 # Add or remove keywords here
-KEYWORDS_REGEX="var_dump\(|die\(|print_r\(|debug_print_var|console\.(debug|info|log|warn)\(|(?<![a-zA-Z])(ad|AD)(?![a-zA-Z])|(?<![a-zA-Z])(ads|ADS)(?![a-zA-Z])"
+KEYWORDS_REGEX="(?i)var_dump\(|die\(|print_r\(|debug_print_var|console\.(debug|info|log|warn)\(|(?<![a-zA-Z])ad(?![a-zA-Z])|(?<![a-zA-Z])ads(?![a-zA-Z])"
 # Add extensions to check here
 EXTENSIONS_REGEX="(.php$|.html$|.js$)"
 
