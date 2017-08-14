@@ -8,7 +8,7 @@ with Git Hooks, you can read up on them [here](https://git-scm.com/book/en/v2/Cu
 Basically, they're operations that are performed when certain git commands are
 executed. In the case of this `pre-commit` hook, any staged files are scanned for keywords
 that shouldn't be committed (i.e. debug, log, ad, etc.). You can see an example
-screenshots below:
+in the screenshots below:
 
 Example File:<br>
 ![alt text](http://i.imgur.com/ahxRIvD.png)
