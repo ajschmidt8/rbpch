@@ -23,7 +23,7 @@ No Keywords Found<br>
 The script requires [ack](https://beyondgrep.com/) in lieu of grep for some regEx features (lookahead & lookbehind).
 Ack can be installed quickly and easily by running the following in your terminal: `brew install ack`.
 
-# Global Installation
+# Global Installation (recommended)
 (borrowed from [here](https://coderwall.com/p/jp7d5q/create-a-global-git-commit-hook))
 
 1. **Enable global git templates:**<br>
