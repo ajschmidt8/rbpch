@@ -10,7 +10,11 @@ executed. In the case of this `pre-commit` hook, any staged files are scanned fo
 that shouldn't be committed (i.e. debug, log, ad, etc.). You can see an example
 screenshot below:
 
+Bad Keywords Found<br>
 ![alt text](http://i.imgur.com/eFtWsAU.png)
+
+No Keywords Found<br>
+![alt text](http://i.imgur.com/lElqb50.png)
 
 # Global Installation
 (borrowed from [here](https://coderwall.com/p/jp7d5q/create-a-global-git-commit-hook))
@@ -30,6 +34,7 @@ This tells git to copy everything in ~/.git-templates to your per-project .git/ 
 
 5. **Re-initialize git in each existing repo you'd like to use this in:**<br>
 `git init`<br>
+**Important!** Make sure to run this command in the root folder of the repo (i.e. the path that contains the `.git` folder). **Not** the WP theme folder you are working in. I made this mistake the first time.
 
 # Per Repo Installation
 1. **Clone this repo into hooks folder:**<br>
@@ -45,6 +50,9 @@ or<br>
 `rm REPO/.git/hooks/pre-commit`
 
 # FAQs
+* **Can I bypass the pre-commit hook?**<br>
+Yup! Just use the `--no-verify` flag (`-n` for short). (i.e. `gmsg 'your awesome commit message' -n`)
+
 * **Is the `pre-commit` file pushed to the remote repo with the other staged files?**<br>
 Nope! ([source](https://stackoverflow.com/questions/12222186/are-git-hooks-pushed-to-the-remote-when-i-git-push))
 
