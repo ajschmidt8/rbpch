@@ -71,7 +71,7 @@ Nope! <br>
 Nope! Only the following file extensions are scanned: `.php, .html, .js`. Feel free to Slack me or submit a PR if you want to add more.
 
 * **What keywords are checked?**<br>
-As of right now, the following keywords are scanned:<br>
+The keywords are checked with `regex` patterns. You can view the pattern used in the `pre-commit` file. It picks up the following keywords:<br>
     * `var_dump(`
     * `die(`
     * `print_r(`
