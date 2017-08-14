@@ -1,5 +1,14 @@
 # RB Pre-Commit Hook (rbpch)
 
+**Table of Contents**
+- [Intro](#intro)
+- [Requirements](#requirements)
+- [Global Installation (recommended)](#global-installation-recommended)
+- [Per Repo Installation](#per-repo-installation)
+- [Uninstall](#uninstall)
+- [FAQs](#faqs)
+
+
 ## Intro
 Hey RB'ers,<br>
 I've been reading a lot about Git Hooks lately and trying to figure out if
