@@ -8,13 +8,20 @@ with Git Hooks, you can read up on them [here](https://git-scm.com/book/en/v2/Cu
 Basically, they're operations that are performed when certain git commands are
 executed. In the case of this `pre-commit` hook, any staged files are scanned for keywords
 that shouldn't be committed (i.e. debug, log, ad, etc.). You can see an example
-screenshot below:
+screenshots below:
+
+Example File:<br>
+![alt text](http://i.imgur.com/ahxRIvD.png)
 
 Bad Keywords Found<br>
-![alt text](http://i.imgur.com/eFtWsAU.png)
+![alt text](http://i.imgur.com/M8sosx1.png)
 
 No Keywords Found<br>
 ![alt text](http://i.imgur.com/lElqb50.png)
+
+# Requirements
+The script requires [ack](https://beyondgrep.com/) in lieu of grep for some regEx features (lookahead & lookbehind).
+Ack can be installed by running: `brew install ack`.
 
 # Global Installation
 (borrowed from [here](https://coderwall.com/p/jp7d5q/create-a-global-git-commit-hook))
