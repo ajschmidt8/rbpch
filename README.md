@@ -1,5 +1,10 @@
 # RB Pre-Commit Hook (rbpch)
+# Table of Contents
+1. [Intro](#intro)
+2. [Example2](#example2)
+3. [Third Example](#third-example)
 
+## Intro <a name="introduction"></a>
 Hey RB'ers,<br>
 I've been reading a lot about Git Hooks lately and trying to figure out if
 there was a way to incorporate them into our workflow. If you're not familiar
