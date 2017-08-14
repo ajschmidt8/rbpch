@@ -1,10 +1,6 @@
 # RB Pre-Commit Hook (rbpch)
-# Table of Contents
-1. [Intro](#intro)
-2. [Example2](#example2)
-3. [Third Example](#third-example)
 
-## Intro <a name="introduction"></a>
+## Intro
 Hey RB'ers,<br>
 I've been reading a lot about Git Hooks lately and trying to figure out if
 there was a way to incorporate them into our workflow. If you're not familiar
@@ -24,11 +20,11 @@ Bad Keywords Found<br>
 No Keywords Found<br>
 ![alt text](http://i.imgur.com/lElqb50.png)
 
-# Requirements
+## Requirements
 The script requires [ack](https://beyondgrep.com/) in lieu of grep for some regEx features (lookahead & lookbehind).
 Ack can be installed quickly and easily by running the following in your terminal: `brew install ack`.
 
-# Global Installation (recommended)
+## Global Installation (recommended)
 (borrowed from [here](https://coderwall.com/p/jp7d5q/create-a-global-git-commit-hook))
 
 1. **Enable global git templates:**<br>
@@ -48,20 +44,20 @@ This tells git to copy everything in ~/.git-templates to your per-project .git/ 
 `git init`<br>
 **Important!** Make sure to run this command in the root folder of the repo (i.e. the path that contains the `.git` folder). **Not** the WP theme folder you are working in. I made this mistake the first time.
 
-# Per Repo Installation
+## Per Repo Installation
 1. **Clone this repo into hooks folder:**<br>
 `git clone git@github.com:ajschmidt8/rbpch.git REPO/.git/hooks`
 
 2. **Make sure the hook is executable:**<br>
 `chmod a+x REPO/.git/hooks/pre-commit`
 
-# Uninstall
+## Uninstall
 1. **Remove `pre-commit` from hooks folder:**<br>
 `rm ~/.git-templates/hooks/pre-commit`<br>
 or<br>
 `rm REPO/.git/hooks/pre-commit`
 
-# FAQs
+## FAQs
 * **Can I bypass the pre-commit hook?**<br>
 Yup! Just use the `--no-verify` flag (`-n` for short). (i.e. `gmsg 'your awesome commit message' -n`)
 
